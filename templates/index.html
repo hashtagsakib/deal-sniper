@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deal Sniper</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); color: #333; }
+        h1 { color: #2d3748; text-align: center; margin-bottom: 30px; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { font-weight: bold; color: #4a5568; }
+        input[type="text"], input[type="number"] { padding: 10px; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 1em; }
+        button { padding: 12px 20px; background-color: #3182ce; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: background-color 0.2s ease; }
+        button:hover { background-color: #2b6cb0; }
+        .disclaimer { font-size: 0.8em; color: #718096; text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🎁 Deal Sniper</h1>
+    <form action="/search" method="post">
+        <label for="item">What are you looking for? (e.g., 'Mechanical Keyboard', 'Espresso Machine'):</label>
+        <input type="text" id="item" name="item" value="Cool tech gadgets">
+        
+        <label for="budget">What is your max budget? (e.g., 100):</label>
+        <input type="number" id="budget" name="budget" value="100">
+        
+        <label for="personality">Describe the recipient's vibe (e.g., 'Loves retro stuff', 'Gamer', 'Minimalist'):</label>
+        <input type="text" id="personality" name="personality" value="General tech lover">
+        
+        <button type="submit">Find Deals</button>
+    </form>
+    <p class="disclaimer">Powered by Perplexity Sonar Pro</p>
+</body>
+</html>
