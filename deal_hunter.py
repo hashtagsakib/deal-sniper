@@ -45,7 +45,7 @@ def get_deals(query, budget, personality):
     )
 
     user_prompt = (
-        f"Find me 5 amazing gift ideas for someone who is into: {personality}. "
+        f"Find me 10 amazing gift ideas for someone who is into: {personality}. "
         f"They are looking for: {query}. "
         f"My hard limit budget is BDT {budget}. "
         "Focus on items that are currently on sale or have a price drop. "
@@ -99,7 +99,7 @@ def generate_html_report(content, query):
                 {content.replace('\n', '<br>')}
             </div>
             <div class="footer">
-                Powered by Perplexity Sonar Pro
+                Made by Nazmus Sakib
             </div>
         </div>
     </body>
